@@ -17,10 +17,10 @@
     <meta name="mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-title" content="TutorialApp" />
 
-    <script type="module" src="node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="node_modules/@ionic/core/dist/ionic/ionic.js"></script>
-    <link href="node_modules/@ionic/core/css/ionic.bundle.css" rel="stylesheet">
-
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+  
     <script>
       if (!window.customElements) {
         document.write('<!--');
@@ -34,12 +34,13 @@
       }
 
       ::-webkit-scrollbar-thumb {
-        background-color: var(--ion-color-dark);
+        background-color: rgba(var(--ion-color-dark-rgb), .4);
+        border-radius: 3px!important;
       }
 
-      ::-webkit-scrollbar-track {
+      /* ::-webkit-scrollbar-track {
         background: hsla(0,0%,100%,.08);
-      }
+      } */
 
             
       /** Ionic CSS Variables **/

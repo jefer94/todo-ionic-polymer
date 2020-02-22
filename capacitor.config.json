@@ -1,0 +1,8 @@
+{
+  "appId": "com.choco.todo.ionic.polymer",
+  "appName": "Todo Ionic Polymer",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "dist",
+  "cordova": {}
+}

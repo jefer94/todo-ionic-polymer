@@ -1,5 +1,6 @@
 import { html } from 'lit-html'
 import router, { loadUrl } from './router'
+import lang from '../lang'
 
 export function addMenuItem(url, label) {
   return {url, label}
@@ -23,7 +24,7 @@ export default function({color, routes, title}) {
     <ion-menu side="start" id="first" contentId="content-menu">
       <ion-header>
         <ion-toolbar color="${color}" >
-          <ion-title>Menu</ion-title>
+          <ion-title>${lang.menu}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>

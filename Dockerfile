@@ -13,11 +13,11 @@ COPY . .
 RUN yarn build
 
 # RUN /usr/bin/google-chrome --headless --no-sandbox
-ENTRYPOINT ["dumb-init", "--", "/src/entrypoint.sh"]
+# ENTRYPOINT ["dumb-init", "--", "/src/entrypoint.sh"]
 
 RUN echo "Starting web server....."
 
 FROM nginx
-COPY --from=node /usr/src/build /usr/share/nginx/html
+COPY --from=node /usr/src/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

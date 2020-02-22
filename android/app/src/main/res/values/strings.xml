@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Todo Ionic Polymer</string>
+    <string name="title_activity_main">Todo Ionic Polymer</string>
+    <string name="package_name">com.choco.todo.ionic.polymer</string>
+    <string name="custom_url_scheme">com.choco.todo.ionic.polymer</string>
+</resources>
